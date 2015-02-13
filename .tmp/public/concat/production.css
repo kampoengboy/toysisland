@@ -475,7 +475,7 @@ h1 {
   margin: 0 auto;
   width: 100%;
   min-height:100%;
-  background-color:#110022;
+  background-image: url('/images/bg-site.png');
   color:#eee;
   overflow:hidden;
 }
@@ -488,7 +488,9 @@ h1 {
 .v-center {
   margin-top:7%;
 }
-  
+#boneka : {
+    background-image: url('/images/slide-1.png');
+}
 .clock {
     width: 620px;
     position: relative;
