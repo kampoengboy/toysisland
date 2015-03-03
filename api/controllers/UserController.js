@@ -21,13 +21,13 @@ module.exports = {
 	                from:usrObj.email,
 	                to : 'official.toysisland@gmail.com',
 	                subject : 'Subscriber Toys Island',
-	                html : '<p>Hai, Admin. Seseorang menginginkan info launching dari Toys Island dengan Email : '+ usrObj.email +'</p>'
+	                html : '<p>Hai, Admin. Seseorang dengan kriteria sebagai berikut : <br> Nama : '+usrObj.name + '<br>Organisasi : '+usrObj.organization+'<br>Email : '+ usrObj.email +'<br>Telepon : '+usrObj.phone+'<br><br>Memberikan komentar sebagai berikut:<br><br><p>'+usrObj.comments+'</p></p>'
 	            };
 	         var MailOptions2 = {
 	                from:'Toys Island <official.toysisland@gmail.com>',
 	                to : usrObj.email,
 	                subject : 'Subscriber Toys Island',
-	                html : '<p>Hai.. Terima kasih telah mengirimkan email kepada kami. Kami akan langsung mengabari anda jikalau situs kami sudah online.</p>'
+	                html : '<p>Hai.. Terima kasih telah mengirimkan email kepada kami. Ikuti terus perkembangan kami di <a href="http://toysisland.herokuapp.com">toysisland.herokuapp.com</a> atau kunjungi langsung toko kami....</p>'
 	            };
 	        transporter.sendMail(MailOptions,function(error,info){
 	              if (error) {
