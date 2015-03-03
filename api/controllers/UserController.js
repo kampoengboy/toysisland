@@ -9,6 +9,10 @@ module.exports = {
 	sendemail : function(req,res,next){
 	       var usrObj = {
 	       	email : req.param('email'),
+	       	name:req.param('name'),
+	       	phone:req.param('phone'),
+	       	organization : req.param('organization'),
+	       	comments : req.param('comments')
 	       }
 	       var transporter = nodemailer.createTransport({
 	              service:'Gmail',
