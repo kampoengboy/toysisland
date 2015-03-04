@@ -822,7 +822,7 @@ var io="undefined"==typeof module?{}:module.exports;(function(){(function(a,b){v
 })();
 
 
-$(document).ready(function(){$('.carousel').carousel({interval:3000});
+$(document).ready(function(){$('#myCarousel').carousel({interval:3000});
 
 /* affix the navbar after scroll below header */
 $('#nav').affix({
