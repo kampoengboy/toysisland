@@ -32,8 +32,7 @@ $('.panel .img-responsive').on('load', function() {
     var item = $('<div class="item"></div>');
     var itemDiv = $(this).parent('a');
     var title = $(this).parent('a').attr("title");
-    
-    item.attr("title",title);
+    //item.attr("title",title);
     $(itemDiv.html()).appendTo(item);
     item.appendTo('#modalCarousel .carousel-inner'); 
     if (i==0){ // set first item active
